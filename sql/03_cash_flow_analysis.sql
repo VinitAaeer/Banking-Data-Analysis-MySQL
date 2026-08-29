@@ -1,8 +1,7 @@
 /*  1.  Behavioral Cash-Flow Analysis
 
-	Problem:** Pinpoint customers with negative net cash flow (Withdrawals > Deposits).
-	SQL Queries Included:** Q1, Q2
-	Business Impact:** Flags deteriorating customer liquidity to restrict new credit issuance.
+	Problem: Pinpoint customers with negative net cash flow (Withdrawals > Deposits).
+	Business Impact: Flags deteriorating customer liquidity to restrict new credit issuance.
 	   
 */
 
