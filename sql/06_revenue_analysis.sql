@@ -1,12 +1,11 @@
 /*
  4.  Revenue Growth & Customer Value Segmentation
 	Problem:** Calculate Month-over-Month (MoM) revenue growth and segment customers into Platinum, Gold, and Silver tiers.
-	SQL Queries Included:** Q33, Q35
 	Business Impact:** Provides executive management with growth trends and identifies VIP customers for dedicated Relationship Managers.
 */
 
 
--- Q10. Segment customers based on transaction value.
+-- Q1. Segment customers based on transaction value.
 SELECT
     customer_id,
     SUM(amount) AS total_value,
@@ -32,7 +31,7 @@ GROUP BY customer_id;
 
 
 
--- Q11. Calculate month-over-month growth.
+-- Q2. Calculate month-over-month growth.
 WITH monthly AS (
     SELECT
         DATE_FORMAT(
