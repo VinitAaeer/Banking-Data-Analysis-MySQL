@@ -1,10 +1,9 @@
 /*
   2.Credit Risk & Loan Default Analysis
-		Problem:** Identify high-value customers with large outstanding loans and frequent EMI delays to prevent NPA.
-		SQL Queries Included:** Q4, Q5, Q6
-		Business Impact:** Helps the collection team prioritize high-exposure risk accounts before default occurs.
+		Problem: Identify high-value customers with large outstanding loans and frequent EMI delays to prevent NPA.
+		Business Impact: Helps the collection team prioritize high-exposure risk accounts before default occurs.
 */
---  Q4. Find customers who have active loans but no successful repayment.
+--  Q1. Find customers who have active loans but no successful repayment.
 SELECT DISTINCT
     l.customer_id
 FROM loans l
@@ -15,7 +14,7 @@ WHERE l.status = 'Active'
   AND r.repayment_id IS NULL;
 
 
--- Q5. Find loan types with default rate above 5%.
+-- Q2. Find loan types with default rate above 5%.
 
 SELECT
     loan_type,
@@ -32,7 +31,7 @@ FROM loans
 GROUP BY loan_type
 HAVING default_rate > 5;
 
--- Q6. Identify high-value customers who are at risk of becoming bad borrowers.
+-- Q3. Identify high-value customers who are at risk of becoming bad borrowers.
 WITH customer_value AS (
     SELECT
         customer_id,
