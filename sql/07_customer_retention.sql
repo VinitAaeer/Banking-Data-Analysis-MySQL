@@ -1,12 +1,11 @@
 /*
  5. Customer Dormancy & Reactivation Analysis
 	Problem:** Track dormant accounts (no activity for 180 days) and re-activated customer behavior.
-	SQL Queries Included:** Q41, Q42
 	Business Impact:** Drives targeted marketing campaigns to retain at-risk customers.
 */
 
 -- — CUSTOMER RETENTION
--- Q12. Find customers who haven't transacted for 180 days.
+-- Q1. Find customers who haven't transacted for 180 days.
 SELECT
     customer_id,
     MAX(transaction_date) AS last_transaction
@@ -16,7 +15,7 @@ GROUP BY customer_id
 HAVING last_transaction <
        CURRENT_DATE - INTERVAL 180 DAY;
        
--- Q13. Find customers who became active again after 90 days.
+-- Q2. Find customers who became active again after 90 days.
 WITH x AS (
     SELECT
         customer_id,
