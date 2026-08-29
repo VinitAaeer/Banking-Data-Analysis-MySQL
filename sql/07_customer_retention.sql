@@ -1,7 +1,7 @@
 /*
  5. Customer Dormancy & Reactivation Analysis
-	Problem:** Track dormant accounts (no activity for 180 days) and re-activated customer behavior.
-	Business Impact:** Drives targeted marketing campaigns to retain at-risk customers.
+	Problem: Track dormant accounts (no activity for 180 days) and re-activated customer behavior.
+	Business Impact: Drives targeted marketing campaigns to retain at-risk customers.
 */
 
 -- — CUSTOMER RETENTION
