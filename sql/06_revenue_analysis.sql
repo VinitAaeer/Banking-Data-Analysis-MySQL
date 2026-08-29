@@ -1,7 +1,7 @@
 /*
  4.  Revenue Growth & Customer Value Segmentation
-	Problem:** Calculate Month-over-Month (MoM) revenue growth and segment customers into Platinum, Gold, and Silver tiers.
-	Business Impact:** Provides executive management with growth trends and identifies VIP customers for dedicated Relationship Managers.
+	Problem: Calculate Month-over-Month (MoM) revenue growth and segment customers into Platinum, Gold, and Silver tiers.
+	Business Impact: Provides executive management with growth trends and identifies VIP customers for dedicated Relationship Managers.
 */
 
 
