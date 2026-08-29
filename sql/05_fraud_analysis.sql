@@ -5,7 +5,7 @@
 */
 
 
--- Q7. Find customers making multiple transactions within 5 minutes.
+-- Q1. Find customers making multiple transactions within 5 minutes.
 SELECT
     t1.customer_id,
     t1.transaction_id,
@@ -22,8 +22,8 @@ JOIN transactions t2
 
 
  
- -- FRAUD PATTERN
--- Q8. Find customers who make transactions from multiple countries within one day.
+-- FRAUD PATTERN
+-- Q2. Find customers who make transactions from multiple countries within one day.
 SELECT
     customer_id,
     DATE(transaction_date) AS transaction_day
@@ -39,7 +39,7 @@ HAVING COUNT(DISTINCT country) > 1;
 
 
 
--- Q9. Find customers with unusual transaction amounts compared with their average.
+-- Q3. Find customers with unusual transaction amounts compared with their average.
 
 SELECT
      customer_id, AVG(amount) from transactions group by customer_id;
