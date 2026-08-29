@@ -1,11 +1,10 @@
 /*
   6. Pareto Analysis (80/20 Revenue Rule)
 	Problem:** Identify the top 20% of customer cohorts driving 80% of total transaction volume.
-	SQL Queries Included:** Q55
 	Business Impact:** Focuses retention efforts on the most profitable bank accounts.
 */
 
--- Q.14  Find customers contributing to first 80% of transaction value.
+-- Q.1  Find customers contributing to first 80% of transaction value.
 WITH customer_value AS (
        SELECT
             customer_id, SUM(amount) AS value
